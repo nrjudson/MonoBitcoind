@@ -14,7 +14,7 @@ Setup
 -----
 
 - Download and install Bitcoin Core
-- Modify your bitcoin.conf file (if you're just starting see: https://en.bitcoin.it/wiki/Running_Bitcoin) and set
+- Modify your 'bitcoin.conf' file (if you're just starting see: https://en.bitcoin.it/wiki/Running_Bitcoin) and set
   - rpcuser={your username you will make up}
   - rpcpassword={your password you will make up}
   - testnet=1 (if you want to run on the bitcoin testnet, or...)
@@ -28,8 +28,8 @@ MonoBitcoind let's you automate processes that you'd have to do by hand in this 
 
 - Download and install your editor of choice for Mono or C# programs.
 - Create or import a project with these committed files.
-- At the top of Bitcoin.cs, change _rpcuser and _rpcpassword to be your username and password that you set in your bitcoin.conf file.
-- If you run Main is Program.cs, it will run through all of the examples.  Whether or not it fails, the console it made will remain open until you close it, due to a sleep call in Program.cs.  The examples run-through will undoubtedly fail, as it has certain things unique to my instance of bitcoind, but by debugging it you might learn some more about bitcoind.
+- At the top of 'Bitcoind.cs', change _rpcuser and _rpcpassword to be your username and password that you set in your 'bitcoin.conf' file.
+- If you run Main is Program.cs, it will run through all of the examples.  Whether or not it fails, the console it made will remain open until you close it, due to a sleep call in 'Program.cs'.  The examples run-through will undoubtedly fail, as it has certain things unique to my instance of bitcoind, but by debugging it you might learn some more about bitcoind.
 
 I know I did while making this.
 
