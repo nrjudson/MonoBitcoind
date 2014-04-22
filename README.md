@@ -28,6 +28,7 @@ MonoBitcoind let's you automate processes that you'd have to do by hand in this 
 
 - Download and install your editor of choice for Mono or C# programs.
 - Create or import a project with these committed files.
+- Add a reference to `Newtonsoft.Json.dll` that is included in the `libs` folder.
 - At the top of `Bitcoind.cs`, change _rpcuser and _rpcpassword to be your username and password that you set in your `bitcoin.conf` file.
 - If you run Main is `Program.cs`, it will run through all of the examples.  Whether or not it fails, the console it made will remain open until you close it, due to a sleep call in `Program.cs`.  The examples run-through will undoubtedly fail, as it has certain things unique to my instance of bitcoind, but by debugging it you might learn some more about bitcoind.
 
