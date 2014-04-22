@@ -5,7 +5,7 @@ MonoBitcoind
 
 I currently recommend this only for casual automation.  The code was built quickly over a weekend, and I'm looking for some feedback.  Email me at Noah@CoinBeyond.com.
 
-By the end of the month, there will be some handy features that will make multisig and extended keys easier!
+By the end of the month, there will be some handy features that will make multisig and extended keys easier.
 
 There are several other good C#/Mono bitcoin implementations on github that you should check out:
 `BitcoinLib`, `BitSharp`, and `Bitcoin.NET`.
@@ -14,14 +14,16 @@ Setup
 -----
 
 - Download and install Bitcoin Core
-- Modify your `bitcoin.conf` file (if you're just starting see: https://en.bitcoin.it/wiki/Running_Bitcoin) and set
-  - rpcuser={your username you will make up}
-  - rpcpassword={your password you will make up}
-  - testnet=1 (if you want to run on the bitcoin testnet, or...)
-  - regtest=1 (if you want to run in regtest mode, which allows you start with a fresh blockchain and mine your own blocks)
-  - server=1
-  - txindex=1 (if you want to be able to lookup any transaction, but this requires running bitcoind with -reindex once)
-- Start a bitcoind server by running bitcoind -printtoconsole (and possibly -reindex) from the bitcoind location (in Windows, this is `C:\Program Files\Bitcoin\daemon`)
+- Modify your `bitcoin.conf` file (if you're just starting see: https://en.bitcoin.it/wiki/Running_Bitcoin) and set:
+```
+rpcuser={your username you will make up}
+rpcpassword={your password you will make up}
+testnet=1 (if you want to run on the bitcoin testnet, or...)
+regtest=1 (if you want to run in regtest mode, which allows you start with a fresh blockchain and mine your own blocks)
+server=1
+txindex=1 (if you want to be able to lookup any transaction, but this requires running bitcoind with -reindex once)
+```
+- Start a bitcoind server by running `bitcoind -printtoconsole` (and possibly -reindex) from the bitcoind location (in Windows, this is `C:\Program Files\Bitcoin\daemon`)
 - From another command prompt in the same directory, you can run bitcoind manually.  
 
 MonoBitcoind let's you automate processes that you'd have to do by hand in this command prompt.
