@@ -3,12 +3,24 @@ MonoBitcoind
 
 **A Mono/C# wrapper for the bitcoind functions with examples for each function, following KISS: Keep It Simple, Stupid.**
 
-I currently recommend this only for casual automation.  The code was built quickly over a weekend, and I'm looking for some feedback.  Email me at Noah@CoinBeyond.com.
+Summary
+-------
+Primarily, this is a single class that allows you to use nearly all bitcoind calls from Mono/C# with the benefit of the code and the type system handling all the of the specific syntax for bitcoin core's json RPC interface.  
 
-By the end of the month, there will be some handy features that will make multisig and extended keys easier.
+This allows you to build on top of bitcoind by just including this class.  In addition, examples for every implemented call are provided in another class, making it stupid simple to pick up.
+
+By the end of the month, there will be new features that include simplified hierarchical deterministic extended keys and multisignature transactions.
 
 There are several other good C#/Mono bitcoin implementations on github that you should check out:
 `BitcoinLib`, `BitSharp`, and `Bitcoin.NET`.
+
+
+Please Do Not Make An Exchange With This Code
+---------------------------------------------
+This code is under heavy development, and digital currency security is a serious thing, so use it at your own risk.  
+
+I'm eager to hear feedback from the core dev community, please email me at Noah@CoinBeyond.com.
+
 
 Setup
 -----
@@ -35,6 +47,7 @@ MonoBitcoind let's you automate processes that you'd have to do by hand in this 
 - If you run Main is `Program.cs`, it will run through all of the examples.  Whether or not it fails, the console it made will remain open until you close it, due to a sleep call in `Program.cs`.  The examples run-through will undoubtedly fail, as it has certain things unique to my instance of bitcoind, but by debugging it you might learn some more about bitcoind.
 
 I know I did while making this.
+
 
 License
 -------
