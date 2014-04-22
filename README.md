@@ -21,7 +21,7 @@ Setup
   - regtest=1 (if you want to run in regtest mode, which allows you start with a fresh blockchain and mine your own blocks)
   - server=1
   - txindex=1 (if you want to be able to lookup any transaction, but this requires running bitcoind with -reindex once)
-- Start a bitcoind server by running bitcoind -printtoconsole (and possibly -reindex) from the bitcoind location (in Windows, this is `C:\Program Files\Bitcoin\daemon`>
+- Start a bitcoind server by running bitcoind -printtoconsole (and possibly -reindex) from the bitcoind location (in Windows, this is `C:\Program Files\Bitcoin\daemon`)
 - From another command prompt in the same directory, you can run bitcoind manually.  
 
 MonoBitcoind let's you automate processes that you'd have to do by hand in this command prompt.
