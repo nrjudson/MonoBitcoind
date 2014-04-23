@@ -5,7 +5,7 @@ MonoBitcoind
 
 Summary
 -------
-Primarily, this is a single class that allows you to use nearly all bitcoind calls from Mono/C# with the benefit of the code and the type system handling all the of the specific syntax for bitcoin core's json RPC interface.  
+Primarily, this is a single class that allows you to use nearly all bitcoind calls from Mono/C# with the benefit of the code and the type system handling all the of the specific syntax for bitcoin core's JSON-RPC interface.  
 
 This allows you to build on top of bitcoind by just including this class.  In addition, examples for every implemented call are provided in another class, making it stupid simple to pick up.
 
