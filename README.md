@@ -11,7 +11,7 @@ This allows you to build on top of bitcoind by just including this class.  In ad
 
 By the end of the month, there will be new features that include simplified hierarchical deterministic extended keys and multisignature transactions.
 
-There are several other good C#/Mono bitcoin implementations on github that you should check out:
+There are several other good C#/Mono bitcoin projects on github that you should check out:
 `BitcoinLib`, `BitcoinRpcSharp`, `BitSharp`, and `Bitcoin.NET`.
 
 
