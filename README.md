@@ -28,8 +28,9 @@ Setup
 - Download and install Bitcoin Core
 - Modify your `bitcoin.conf` file (if you're just starting see: https://en.bitcoin.it/wiki/Running_Bitcoin) and set:
 ```
-rpcuser={your username you will make up}
-rpcpassword={your password you will make up}
+rpcuser={your username you will make up} (remember to uncomment this!)
+rpcpassword={your password you will make up} (remember to uncomment this!)
+rpcport=8332 (the bitcoind port listening for RPC connection)
 testnet=1 (if you want to run on the bitcoin testnet, or...)
 regtest=1 (if you want to run in regtest mode, which allows you start with a fresh blockchain and mine your own blocks)
 server=1
@@ -41,6 +42,8 @@ txindex=1 (if you want to be able to lookup any transaction, but this requires r
 MonoBitcoind let's you automate processes that you'd have to do by hand in this command prompt.
 
 - Download and install your editor of choice for Mono or C# programs.
+  - Note that if you're using Mono on Linux, you may need to upgrade to an Experimental PPA:
+    - deb http://ppa.launchpad.net/directhex/monoxide/ubuntu precise main
 - Create or import a project with these committed files.
 - Add a reference to `Newtonsoft.Json.dll` that is included in the `libs` folder.
 - At the top of `Bitcoind.cs`, change _rpcuser and _rpcpassword to be your username and password that you set in your `bitcoin.conf` file.
