@@ -19,7 +19,7 @@ namespace MonoBitcoind
 
 		public static void RunExamples()
 		{
-			Bitcoind.WalletPassPhrase (_walletPassPhrase, _walletPassPhraseTimeout);
+			//Bitcoind.WalletPassPhrase (_walletPassPhrase, _walletPassPhraseTimeout);
 
 			if (!AddMultiSigAddress ())
 				Console.WriteLine ("Failed AddMultiSigAddress tests!");
@@ -137,12 +137,12 @@ namespace MonoBitcoind
 				Console.WriteLine ("Failed ValidateAddress!");
 			if (!VerifyMessage ())
 				Console.WriteLine ("Failed VerifyMessage!");
-			if (!WalletLock ())
-				Console.WriteLine ("Failed WalletLock!");
-			if (!WalletPassPhrase ())
-				Console.WriteLine ("Failed WalletPassPhrase!");
-			if (!WalletPassPhraseChange ())
-				Console.WriteLine ("Failed WalletPassPhraseChange!");
+//			if (!WalletLock ())
+//				Console.WriteLine ("Failed WalletLock!");
+//			if (!WalletPassPhrase ())
+//				Console.WriteLine ("Failed WalletPassPhrase!");
+//			if (!WalletPassPhraseChange ())
+//				Console.WriteLine ("Failed WalletPassPhraseChange!");
 		}
 
 
